@@ -13,6 +13,9 @@
 		1154F5811F49401800176245 /* MidtermProject2017.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1154F57F1F49401800176245 /* MidtermProject2017.xcdatamodeld */; };
 		1154F5831F49401800176245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1154F5821F49401800176245 /* Assets.xcassets */; };
 		1154F5861F49401800176245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1154F5841F49401800176245 /* LaunchScreen.storyboard */; };
+		1154F58E1F49402300176245 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1154F58D1F49402300176245 /* GoogleService-Info.plist */; };
+		1154F5901F49624C00176245 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154F58F1F49624C00176245 /* LoginController.swift */; };
+		FAC53B8B3E01462EC32BA640 /* Pods_MidtermProject2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD39400548850DC0658A607 /* Pods_MidtermProject2017.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1154F5821F49401800176245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1154F5851F49401800176245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1154F5871F49401800176245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1154F58D1F49402300176245 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1154F58F1F49624C00176245 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4AD39400548850DC0658A607 /* Pods_MidtermProject2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidtermProject2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78997176C21469B225A61AE7 /* Pods-MidtermProject2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermProject2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-MidtermProject2017/Pods-MidtermProject2017.release.xcconfig"; sourceTree = "<group>"; };
+		FAE304D5A2188BAEC095055E /* Pods-MidtermProject2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermProject2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MidtermProject2017/Pods-MidtermProject2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC53B8B3E01462EC32BA640 /* Pods_MidtermProject2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1154F5771F49401800176245 /* MidtermProject2017 */,
 				1154F5761F49401800176245 /* Products */,
+				2488FC01A800A4F26BD50FA5 /* Pods */,
+				EF0E2F926F08E33FCFAC3174 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,42 @@
 		1154F5771F49401800176245 /* MidtermProject2017 */ = {
 			isa = PBXGroup;
 			children = (
+				1154F5911F49625500176245 /* Controllers */,
 				1154F5781F49401800176245 /* AppDelegate.swift */,
 				1154F57A1F49401800176245 /* ViewController.swift */,
 				1154F57C1F49401800176245 /* Main.storyboard */,
 				1154F5821F49401800176245 /* Assets.xcassets */,
 				1154F5841F49401800176245 /* LaunchScreen.storyboard */,
 				1154F5871F49401800176245 /* Info.plist */,
+				1154F58D1F49402300176245 /* GoogleService-Info.plist */,
 				1154F57F1F49401800176245 /* MidtermProject2017.xcdatamodeld */,
 			);
 			path = MidtermProject2017;
+			sourceTree = "<group>";
+		};
+		1154F5911F49625500176245 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1154F58F1F49624C00176245 /* LoginController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2488FC01A800A4F26BD50FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE304D5A2188BAEC095055E /* Pods-MidtermProject2017.debug.xcconfig */,
+				78997176C21469B225A61AE7 /* Pods-MidtermProject2017.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF0E2F926F08E33FCFAC3174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD39400548850DC0658A607 /* Pods_MidtermProject2017.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1154F58A1F49401800176245 /* Build configuration list for PBXNativeTarget "MidtermProject2017" */;
 			buildPhases = (
+				C9D2AE219B9A2706C35B3F3D /* [CP] Check Pods Manifest.lock */,
 				1154F5711F49401800176245 /* Sources */,
 				1154F5721F49401800176245 /* Frameworks */,
 				1154F5731F49401800176245 /* Resources */,
+				E3A2821522193A6771282309 /* [CP] Embed Pods Frameworks */,
+				9D471EFAA15AB337CEB80200 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1154F5861F49401800176245 /* LaunchScreen.storyboard in Resources */,
+				1154F58E1F49402300176245 /* GoogleService-Info.plist in Resources */,
 				1154F5831F49401800176245 /* Assets.xcassets in Resources */,
 				1154F57E1F49401800176245 /* Main.storyboard in Resources */,
 			);
@@ -134,12 +176,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D471EFAA15AB337CEB80200 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProject2017/Pods-MidtermProject2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D2AE219B9A2706C35B3F3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MidtermProject2017-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A2821522193A6771282309 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProject2017/Pods-MidtermProject2017-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProject2017/Pods-MidtermProject2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1154F5711F49401800176245 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1154F57B1F49401800176245 /* ViewController.swift in Sources */,
+				1154F5901F49624C00176245 /* LoginController.swift in Sources */,
 				1154F5791F49401800176245 /* AppDelegate.swift in Sources */,
 				1154F5811F49401800176245 /* MidtermProject2017.xcdatamodeld in Sources */,
 			);
@@ -260,11 +363,12 @@
 		};
 		1154F58B1F49401800176245 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE304D5A2188BAEC095055E /* Pods-MidtermProject2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidtermProject2017/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = z.MidtermProject2017;
+				PRODUCT_BUNDLE_IDENTIFIER = z.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,11 +376,12 @@
 		};
 		1154F58C1F49401800176245 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78997176C21469B225A61AE7 /* Pods-MidtermProject2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidtermProject2017/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = z.MidtermProject2017;
+				PRODUCT_BUNDLE_IDENTIFIER = z.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,6 +406,7 @@
 				1154F58C1F49401800176245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
